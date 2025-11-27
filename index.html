@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>陳冠諭 | AI × 資安學生個人網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px 40px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-left: 5px solid #555;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    .profile-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile-section img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    ul { line-height: 1.8; }
+    .contact a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .skill-box {
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>陳冠諭 | AI × 資安學生個人網站</h1>
+</header>
+
+<div class="container">
+
+  <!-- 基本資料 + 照片 -->
+  <section class="profile-section">
+    <img src="your-photo.jpg" alt="個人照片">
+    <div>
+      <p><strong>Email：</strong>guanyu373@gmail.com</p>
+      <p><strong>Phone：</strong>0902408119</p>
+      <p><strong>位置：</strong>新北市新莊區</p>
+      <p><strong>網站：</strong>www.reallygreatsite.com</p>
+    </div>
+  </section>
+
+  <!-- 自我介紹 -->
+  <h2>自我介紹</h2>
+  <p>
+    我是一個細心且有耐心的人，對新知保持好奇心與學習熱忱。
+    遇到問題時會主動研究並嘗試各種方法解決，從過程中不斷累積經驗。
+    我擅長團隊合作、傾聽與支持他人，也樂於分享想法與成果。
+    相信穩定努力是成長關鍵，期望未來能持續挑戰自我。
+  </p>
+
+  <!-- 在校表現 -->
+  <h2>在校表現與證照</h2>
+  <ul>
+    <li>112 學年第一學期 書卷獎 第三名</li>
+    <li>112 學年第二學期 書卷獎 第一名</li>
+    <li>113 學年第二學期 書卷獎 第三名</li>
+    <li>Microsoft AI-900 證書</li>
+  </ul>
+
+  <!-- 研修課程 -->
+  <h2>研修課程</h2>
+  <ul>
+    <li>生成式 AI</li>
+    <li>資料庫安全</li>
+    <li>企業紫隊攻防與實務演練</li>
+    <li>資料庫安全實務</li>
+    <li>威脅情資分析與數據導向威脅獵捕</li>
+  </ul>
+
+  <!-- 專案經歷 -->
+  <h2>專案經歷</h2>
+
+  <h3>🔹 自動化 SOAR 系統</h3>
+  <p>
+    以 n8n 自動化平台為核心，整合 Elasticsearch、OpenAI、Webhook 等模組，
+    結合 SIEM 日誌分析與 AI 分析，達成從安全事件偵測到自動回應與通知的全流程自動化系統。
+  </p>
+
+  <h3>🔹 資安事件自動分析助理</h3>
+  <p>
+    使用 Dify + OpenAI，自動分析使用者提供的日誌內容，生成安全事件報告並提供 MITRE ATT&CK 映射結果。
+  </p>
+
+  <h3>🔹 卷積神經網路分類農作物害蟲</h3>
+  <p>
+    使用遷移式學習（ResNet-34, EfficientNet-B0, ResNet-50）訓練昆蟲分類模型，
+    並以交叉驗證比較模型表現，選出最佳模型作為最終成果。
+  </p>
+
+  <!-- 技能 -->
+  <h2>技能</h2>
+  <div class="skills-grid">
+    <div class="skill-box">
+      <strong>程式語言</strong>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <strong>資安工具</strong>
+      <ul>
+        <li>Wazuh</li>
+        <li>ELK Stack</li>
+        <li>ModSecurity</li>
+        <li>Wireshark</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <strong>平台 / Framework</strong>
+      <ul>
+        <li>Dify</li>
+        <li>Linux</li>
+        <li>n8n</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 研究興趣 -->
+  <h2>研究與職涯興趣</h2>
+  <ul>
+    <li>SOAR 自動化防禦系統開發</li>
+    <li>威脅情資分析與事件回應</li>
+    <li>AI 驅動的惡意流量檢測</li>
+    <li>資安框架導入與合規分析（ISO 27001 / NIST 800）</li>
+  </ul>
+
+</div>
+
+</body>
+</html>
